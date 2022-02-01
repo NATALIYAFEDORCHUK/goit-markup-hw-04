@@ -370,11 +370,11 @@ letter-spacing: 0.03em;
 color: var(--heder-tel-color);
 /* margin-bottom: 16px; */
 }
-.card-socials-list{
+.card-socials-list
+{
     display: flex;
     justify-content:center;
     margin-bottom: 30px;
-    /* align-items:center; */
 }
 .card-socials-link{
     width: 44px;
@@ -404,9 +404,9 @@ color: var(--heder-tel-color);
 .card-socials-item:last-child{
     margin-right: 0;
 }
-/*Посстоянн*/
+/*Постоянные клиенты*/
 
-.buyer-title{
+.client-title{
    font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -414,6 +414,42 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--heder-link-mailto); 
 }
+
+.client-list{
+    display: flex;
+    justify-content: center;
+   
+}
+.client-item{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.client-item:hover,
+.client-item:focus{
+    stroke: var(--heder-mailto-color);
+}
+.client-item{
+    margin-right: 30px;
+}
+.client-item:last-child{
+    margin-right: 0;
+}
+.client-item-icon{
+  
+}
+.client-item-icon:hover{
+background-color: var(--heder-mailto-color);
+}
+
+
+
+
 /*PORTFOLIO*/
 .heder-portfolio{
     color: #FFFFFF;
@@ -518,7 +554,13 @@ color: var(--heder-tel-color);
 .footer{
     background: #2F303A;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;  
+}
+.footer-section{
+    display: flex;
+}
+.container-logotip +.invite{
+    margin-right: 70px;
 }
 .logotip{
     margin-bottom: 20px;
@@ -582,3 +624,64 @@ color: var(--heder-tel-color);
 .footer-tel:focus{
     color: var(--heder-mailto-color);
 }
+.invite-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    
+    
+
+}
+.invite{
+    margin-left: 70px;
+    margin-top:12px;
+    
+}
+.invite-title{
+    font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+
+ .invite-socials-list
+{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 30px;
+}
+.invite-socials-link{
+    width: 44px;
+    height: 44px;
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color:#FFFFFF;
+}
+ .invite-socials-icon{
+    fill: currentColor;
+} 
+.invite-socials-link:hover,
+.invite-socials-link:focus{
+    background-color: var(--heder-mailto-color);
+    color: var(--section-h);
+}
+/* .card-socials-item + .card-socials-icon{
+    fill: var(--section-h);
+} */
+
+.invite-socials-item{
+    margin-right: 10px;
+}
+.invite-socials-item:last-child{
+    margin-right: 0;
+}   
